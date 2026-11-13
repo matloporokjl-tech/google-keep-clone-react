@@ -1,0 +1,35 @@
+/* Masonry-style notes layout */ 
+.notes-grid { column-count: 4; 
+    column-gap: 16px; 
+    padding: 20px; 
+    margin-left: 250px;
+     box-sizing: border-box; 
+    
+    } /* Keep each note together */ 
+    .notes-grid > .notes {
+         display: inline-block; 
+         width: 100%; 
+         margin-bottom: 16px; 
+         break-inside: avoid; 
+        } 
+
+         @media (max-width: 1200px) { 
+        
+            .notes-grid { 
+                column-count: 3; 
+                margin-left: 220px; 
+            }
+         } 
+         @media (max-width: 900px) {
+             .notes-grid {
+                 column-count: 2;
+                  margin-left: 180px; 
+                }
+             } 
+             @media (max-width: 600px) {
+             .notes-grid{
+                column-count: 1;
+                 margin-left: 0; 
+                 padding: 12px; 
+                
+                } }
